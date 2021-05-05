@@ -69,7 +69,9 @@
                                 <h2 class="section-title">App Components</h2>
                                 <div id="projects" class="section-block">
                                     <h3 class="block-title">Tilaus</h3>
-                                    <p>Intro goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis</p>
+                                    <p>
+                                        Tilaus page's implementation resides inside 'Container' folder and the page is divided into 04 main sections. Each section is independent component combined in main component.
+                                    </p>
                                     <div class="row">
                                         <div class="col-md-6 col-12">
                                             <h6>Overview</h6>
@@ -81,7 +83,12 @@
                                         <div class="col-md-6 col-12">
                                             <h6>Details</h6>
                                             <p>
-                                                Details....
+                                                As shown in the image, there are 05 components for this page.<br />
+                                                1. <b>OrderAndCustomerInfo.js</b><br />
+                                                2. <b>BranchInfo.js</b><br />
+                                                3. <b>OrderList.js</b><br />
+                                                4. <b>Actions.js</b><br />
+                                                5. <b>Orders.js</b> <span> (Combine above child components)</span><br />
                                             </p>
                                         </div>
                                     </div><!--//row-->
@@ -91,7 +98,6 @@
                                     <div class="row">
                                         <div class="col-md-6 col-12">
                                             <h6>Overview</h6>
-                                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
                                             <div class="screenshot-holder">
                                                 <a href="assets/images/demo/pt.png" data-title="Discussion Overview" data-toggle="lightbox"><img class="img-fluid" src="assets/images/demo/pt.png" alt="screenshot" /></a>
                                                 <a class="mask" href="assets/images/demo/pt.png" data-title="Discussion Overview" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
@@ -100,7 +106,10 @@
                                         <div class="col-md-6 col-12">
                                             <h6>Details</h6>
                                             <p>
-                                                Details....
+                                                As shown in the image, there are 03 components for this page.<br />
+                                                1. <b>OrderFilters.js</b><br />
+                                                2. <b>OrderResults.js</b><br />
+                                                3. <b>DayOrders.js</b><span> (Combine above child components)</span><br />
                                             </p>
 
                                         </div>
@@ -119,24 +128,53 @@
                                         </div>
                                         <div class="col-md-6 col-12">
                                             <h6>Details</h6>
-                                                <p>
-                                                    Details....
-                                                </p>
+                                            <p>
+                                                As shown in the image, there are 03 components for this page.<br />
+                                                1. <b>OrderFilters.js</b><br />
+                                                2. <b>OrderResults.js</b><br />
+                                                3. <b>OrderHistory.js</b><span> (Combine above child components)</span><br />
+                                            </p>
                                         </div>
                                     </div><!--//row-->  
                                 </div><!--//section-block-->
                                 
                                 <div id="account" class="section-block">
                                     <h3 class="block-title">Single Order</h3>
-                                    <p>Intro goes here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
- 
+                                    <p>
+                                        This page is rendered when the user click on 'Kmyynti Til.nro' from either 'Vanhat Tilaukset' or 'Paivan Tilaukset'. 
+                                        The components for this page are shown below in right image.
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-8 col-12">
+                                            <h6>Overview</h6>
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/single.png" data-toggle="lightbox"><img class="img-fluid" src="assets/images/demo/single.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/single.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div> 
+                                            <p style="margin-top: 10px;">
+                                                The header section in above image is the information of the customer for the clicked order and section below shows the associated Orders with that orderNumber.
+                                                Tulosta button will make the possibility to print the order and Takaisin will take back to the page from where the link was clicked.
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4 col-12">
+                                            <h6>Details</h6>
+                                            <div class="screenshot-holder">
+                                                <a href="assets/images/demo/single-code.png" data-toggle="lightbox"><img class="img-fluid" src="assets/images/demo/single-code.png" alt="screenshot" /></a>
+                                                <a class="mask" href="assets/images/demo/single-code.png" data-toggle="lightbox"><i class="icon fa fa-search-plus"></i></a>
+                                            </div> 
+                                        </div>
+                                    </div><!--//row-->  
                                 </div><!--//section-block-->
                                 
                                  <div id="others" class="section-block">
                                     <h3 class="block-title">Redux</h3>
                                 </div><!--//section-block-->
                                 <div class="section-block">
-                                    <p class="text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                                    <p class="text-center">
+                                        Redux store has been used for state management of kmyynti application. 
+                                        Actions are dispatched from each component to update the state. These actions can include updating the value of any flagVariable or after getting the data from API. The Reducer always keep the state up-to-date to make the consistent data available for any component any time.
+                                        There are separate <b>action </b> files and <b>reducer </b> files for each main component.
+                                    </p>
                                     <div class="center-block text-center">
                                          <a class="btn btn-primary" href="https://react-redux.js.org" target="_blank">Redux documentation</a>
                                     </div>
