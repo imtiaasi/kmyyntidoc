@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kmyynti React Application</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">  
+      
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">Kmyynti</span><span class="text-bold">Docs</span>
+                        </a>
+                    </h1>
+                    
+                </div><!--//branding-->
+                
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Quick Start</li>
+                </ol>
+                
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Quick Start</h1>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: May 5th, 2021</div>
+                </div><!--//doc-header-->
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section id="installation-section" class="doc-section">
+                                <h2 class="section-title">Installation & Running project locally</h2>
+                                <div id="step1"  class="section-block">
+                                    <h3 class="block-title">Installation</h3>
+                                    <p>
+                                        The first step is to clone the project. Once succeeded, then run the following commands from project directory where <b>package.json</b> exist.
+                                    </p>
+                                    <div class="code-block">
+                                        <h6>Default code example:</h6>
+                                        <p><code>npm install</code></p>
+                                        <p><code>npm start</code></p>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+                                <div id="step3"  class="section-block">
+                                    <h3 class="block-title">View in Browser</h3>
+                                    <p>
+                                        Once all the required packages are installed by running the above command, open the browser and browse to: https://localhost:3000
+                                    </p>
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+                            
+                            <section id="code-section" class="doc-section">
+                                <h2 class="section-title">Code Intro</h2>
+                                <div id="html" class="section-block">
+                                    
+                                    <div class="callout-block callout-success">
+                                        <!-- <div class="icon-holder">
+                                            <i class="fas fa-thumbs-up"></i>
+                                        </div> -->
+                                        <!--//icon-holder-->
+                                        <div class="content">
+                                            <h4 class="callout-title">Framework:</h4>
+                                            <p>
+                                                ReactJS is used as a FE applicaiton development library. The time when project was started, version 17 was the latest.
+                                            </p>
+                                        </div><!--//content-->
+                                    </div>
+                                    <div class="code-block">
+                                        <h6>package.json</h6>
+                                        <pre><code class="language-markup">&lt;!DOCTYPE html&gt; 
+&lt;html lang=&quot;en&quot;&gt; 
+    ...
+    {
+        &#x22;name&#x22;: &#x22;kmyynti&#x22;,
+        &#x22;version&#x22;: &#x22;0.1.0&#x22;,
+        &#x22;private&#x22;: true,
+        &#x22;dependencies&#x22;: {
+          &#x22;@storybook/addon-actions&#x22;: &#x22;^6.0.28&#x22;,
+          &#x22;@storybook/react&#x22;: &#x22;^6.0.28&#x22;,
+          &#x22;@testing-library/jest-dom&#x22;: &#x22;^5.11.4&#x22;,
+          &#x22;@testing-library/react&#x22;: &#x22;^11.1.0&#x22;,
+          &#x22;@testing-library/user-event&#x22;: &#x22;^12.1.10&#x22;,
+          &#x22;axios&#x22;: &#x22;^0.21.0&#x22;,
+          &#x22;babel-loader&#x22;: &#x22;^8.1.0&#x22;,
+          &#x22;bootstrap&#x22;: &#x22;^4.5.3&#x22;,
+          &#x22;env-cmd&#x22;: &#x22;^10.1.0&#x22;,
+          &#x22;jquery&#x22;: &#x22;^3.5.1&#x22;,
+          &#x22;react&#x22;: &#x22;^17.0.1&#x22;,
+          &#x22;react-adal&#x22;: &#x22;^0.5.0&#x22;,
+          &#x22;react-bootstrap&#x22;: &#x22;^1.4.0&#x22;,
+          &#x22;react-bootstrap-typeahead&#x22;: &#x22;^5.1.4&#x22;,
+          &#x22;react-dom&#x22;: &#x22;^17.0.1&#x22;,
+          &#x22;react-loader-spinner&#x22;: &#x22;^4.0.0&#x22;,
+          &#x22;react-loading-overlay&#x22;: &#x22;^1.0.1&#x22;,
+          &#x22;react-modal&#x22;: &#x22;^3.12.1&#x22;,
+          &#x22;react-redux&#x22;: &#x22;^7.2.2&#x22;,
+          &#x22;react-router&#x22;: &#x22;^5.2.0&#x22;,
+          &#x22;react-router-dom&#x22;: &#x22;^5.2.0&#x22;,
+          &#x22;react-scripts&#x22;: &#x22;4.0.0&#x22;,
+          &#x22;react-spinners&#x22;: &#x22;^0.10.6&#x22;,
+          &#x22;react-table&#x22;: &#x22;^6.8.6&#x22;,
+          &#x22;react-table-latest&#x22;: &#x22;npm:react-table@^7.6.2&#x22;,
+          &#x22;react-table-stable&#x22;: &#x22;npm:react-table@^6.10.3&#x22;,
+          &#x22;react-table-v6&#x22;: &#x22;^6.8.6&#x22;,
+          &#x22;react-to-print&#x22;: &#x22;^2.12.1&#x22;,
+          &#x22;react-tooltip&#x22;: &#x22;^4.2.13&#x22;,
+          &#x22;redux&#x22;: &#x22;^4.0.5&#x22;,
+          &#x22;redux-form&#x22;: &#x22;^8.3.7&#x22;,
+          &#x22;redux-thunk&#x22;: &#x22;^2.3.0&#x22;,
+          &#x22;rimraf&#x22;: &#x22;^3.0.2&#x22;,
+          &#x22;typescript&#x22;: &#x22;^4.0.5&#x22;,
+          &#x22;web-vitals&#x22;: &#x22;^0.2.4&#x22;,
+          &#x22;webpack&#x22;: &#x22;^4.44.2&#x22;
+        },
+        &#x22;scripts&#x22;: {
+          &#x22;start&#x22;: &#x22;react-scripts start&#x22;,
+          &#x22;build&#x22;: &#x22;react-scripts build&#x22;,
+          &#x22;build:dev&#x22;: &#x22;env-cmd -f .env.development npm run build&#x22;,
+          &#x22;build:test&#x22;: &#x22;env-cmd -f .env.test npm run build&#x22;,
+          &#x22;build:qa&#x22;: &#x22;env-cmd -f .env.qa npm run build&#x22;,
+          &#x22;test&#x22;: &#x22;react-scripts test&#x22;,
+          &#x22;eject&#x22;: &#x22;react-scripts eject&#x22;
+        },
+        &#x22;eslintConfig&#x22;: {
+          &#x22;extends&#x22;: [
+            &#x22;react-app&#x22;,
+            &#x22;react-app/jest&#x22;
+          ]
+        },
+        &#x22;browserslist&#x22;: {
+          &#x22;production&#x22;: [
+            &#x22;&#x3E;0.2%&#x22;,
+            &#x22;not dead&#x22;,
+            &#x22;not op_mini all&#x22;
+          ],
+          &#x22;development&#x22;: [
+            &#x22;last 1 chrome version&#x22;,
+            &#x22;last 1 firefox version&#x22;,
+            &#x22;last 1 safari version&#x22;
+          ]
+        }
+      }
+      
+    ...
+&lt;/html&gt;</code></pre>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+                                <div id="css" class="section-block">
+                                    <div class="code-block">
+                                        <h6>Code Walkthrough</h6>
+                                        <p>
+                                            The code walkthrough will be done after giving introduction of whole application.
+                                        </p>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+
+                            </section><!--//doc-section-->
+                            <section id="callouts-section" class="doc-section">
+                                <h2 class="section-title">Design Library</h2>
+                                <div class="section-block">
+                                    <p>
+                                        ReactBootrap is used as a design library.
+                                        <a href="https://react-bootstrap.github.io">https://react-bootstrap.github.io</a>
+                                        Other libraries which have been used in project are:
+                                    </p>
+                                </div>
+
+                                <div class="section-block">
+                                    <div class="callout-block callout-info">
+                                        <div class="icon-holder">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div><!--//icon-holder-->
+                                        <div class="content">
+                                            <h4 class="callout-title">jquery</h4>
+                                            <p>
+                                                <b>jquery</b> has been used at many places in the project to implement different requirements of the project.
+                                            </p>
+                                        </div><!--//content-->
+                                    </div><!--//callout-block-->
+                                    
+                                    <div class="callout-block callout-warning">
+                                        <div class="icon-holder">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div><!--//icon-holder-->
+                                        <div class="content">
+                                            <h4 class="callout-title">react-table-v6</h4>
+                                            <p>
+                                                This is the main and very important part of application. The library has been used in <b>TILAUS</b> page for creating the orders, on <b>Paivan Tilaukset</b> to show the orders of the day, and <b>Vanhat Tilaukset</b>.
+                                            </p>
+                                        </div><!--//content-->
+                                    </div><!--//callout-block-->
+                                    
+                                    <div class="callout-block callout-success">
+                                        <div class="icon-holder">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div><!--//icon-holder-->
+                                        <div class="content">
+                                            <h4 class="callout-title">react-modal</h4>
+                                            <p>
+                                                This library has been used to display the dialogues against various actions including <b>Errors Messages, Success of some action</b> etc...
+                                            </p>
+                                        </div><!--//content-->
+                                    </div><!--//callout-block-->
+                                    
+                                    <div class="callout-block callout-danger">
+                                        <div class="icon-holder">
+                                            <i class="fas fa-info-circle"></i>
+                                        </div><!--//icon-holder-->
+                                        <div class="content">
+                                            <h4 class="callout-title">Redux</h4>
+                                            <p>
+                                                The core of this application is state management and <b>REDUX</b> store has been used for this purpose. All the states of the application are managed through Redux Store.
+                                            </p>
+                                        </div><!--//content-->
+                                    </div><!--//callout-block-->
+                                </div>
+                            </section><!--//doc-section-->
+
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+	                        
+	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+	                                <a class="nav-link scrollto" href="#installation-section">Installation & Running Project locally</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#step1">Installation</a>
+                                        <a class="nav-link scrollto" href="#step3">View in Browser</a>
+                                    </nav><!--//nav-->
+	                                <a class="nav-link scrollto" href="#code-section">Code</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#html">package.json</a>
+                                        <a class="nav-link scrollto" href="#css">Code Walkthrough</a>
+                                    </nav><!--//nav-->
+	                                <a class="nav-link scrollto" href="#callouts-section">Callouts</a>
+
+	                            </nav><!--//doc-menu-->
+	                        
+                        </div>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+        
+    </div><!--//page-wrapper-->
+    
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+            <small class="copyright">Designed for documentation purposes</small>
+            
+        </div><!--//container-->
+    </footer><!--//footer-->
+    
+     
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>      
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>                                                             
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    
+</body>
+</html> 
+
